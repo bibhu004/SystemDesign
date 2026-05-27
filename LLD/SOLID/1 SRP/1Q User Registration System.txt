@@ -1,0 +1,43 @@
+ Let's start with S — Single Responsibility Principle (SRP).
+
+Problem 1: User Registration System
+Requirements
+A user can register with:
+	• name 
+	• email 
+When registration is requested:
+	1. Validate that email is not empty and contains "@" 
+	2. Save the user 
+	3. Send a welcome email 
+Example
+
+register("Bibhu", "bibhu@gmail.com");
+Expected flow:
+
+Validating user...
+Saving user...
+Sending welcome email...
+User registered successfully.
+
+Constraints
+Implement only:
+
+public class User {
+}
+
+public class ??? {
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // test
+    }
+}
+No database required.
+For saving user, simply print:
+
+Saving user: Bibhu
+For email:
+
+Sending welcome email to bibhu@gmail.com
+

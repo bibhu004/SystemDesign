@@ -1,0 +1,46 @@
+SOLUTION
+
+
+//class sturucture
+
+@Data
+Public class User{
+	Private String name;
+	Private String email;
+}
+
+Public class UserService{
+	
+	ValidationService validationservice;
+	
+	Public User saveUser(String name, String email){
+		validationService = new ValidationService();
+		If(validationService.validateEmail(email){
+			User user = new user(name, email);
+		}
+		Else{
+			Throw error("Invalid email format");
+	}
+	
+Public class ValidationService{
+
+	Pubic boolean validateEmail(String email){
+		Return email.contains("@");
+	}
+}
+
+Public class NotificationService{
+	
+	Public void sendWelcomeEmail(User user){
+		S.O.P("Welcome, " + user.name  + "!");
+	}
+}
+	
+
+Public class Main{
+	UserService userService;
+	Psvm(){
+		userService = new UserService();
+		User user = userService.saveUser("abc", "def@ijk");
+	}
+	

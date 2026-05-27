@@ -1,0 +1,61 @@
+SOLN
+
+Public abstract class NotificationSystrem{
+	
+	Public void sentNotification(String recipient, String message);
+}
+
+
+Public class EmailService extends NotificationSystrem{
+
+	@Override
+	Public void sentNotification(String recipient, String message){
+		S.O.P("Notification sent via email");
+	}
+	
+	
+}
+
+
+Public class SMSService extends NotificationSystrem{
+
+	@Override
+	Public void sentNotification(String recipient, String message){
+		S.O.P("Notification sent via SMS");
+	}
+	
+}
+
+
+
+Public class PushNotificationService extends NotificationSystrem{
+
+	@Override
+	Public void sentNotification(String recipient, String message){
+		S.O.P("Notification sent via pushNotification");
+	}
+	
+}
+
+
+Public class NotificatioService{
+
+	EmailService emailService;
+	SMSService smsService;
+	PushNotificaitonService pushnotifiationService;
+	
+	//constructor and initialize all the objects
+	
+	Public void SendNotificaiton(String paymentChannel, String recipient, String message){
+		If(paymentChannel == PaymentChannel.SMS){
+			smsService.sendNotification(recipient, message);
+		}
+		
+		//similalry for other 2 services
+	}
+
+}
+
+Class enum PaymentChannel{
+	SMS, EMAIL, PUSH
+	}

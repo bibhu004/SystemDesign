@@ -1,0 +1,50 @@
+Soln 2.
+
+
+Public class SalesReport{
+	
+	
+	Public Map<String, Integer> generateReport(){
+		HashMap<String, Integer> hm = new HashMap<>();
+		Hm.put("total Sales" , 50000);
+		Hm.put("Orders", 120);
+		
+		Return hm;
+	}
+}
+
+Public class SaveReport{
+	
+	Public File saveAsText(Map<String, Integer> hm){
+		File file = File.save(hm);
+		S.O.P("File saved as text");
+		Return file;
+	}
+}
+
+
+Public class NotificationService{
+	
+	Public void emailNotification(String email, File file){
+		S.O.P("Mail sent to ' + email);
+	}
+}
+
+
+
+Public class ReportGenerationService{
+
+	SalesReport salesReport;
+	SaveReport saveReport;
+	NotificationService notificationService;
+	UserService userservice;
+	
+	Public file SalesReportGeneration(){
+	//constructor injection for all the classes;
+		File file = saveReport.saveAsText(salesReport.generateReport());
+		//assuming we have userservice
+		String email = userService.getEmailByRole("Manager");
+		
+		notificationService.emailNotification(email, file);
+	}
+		

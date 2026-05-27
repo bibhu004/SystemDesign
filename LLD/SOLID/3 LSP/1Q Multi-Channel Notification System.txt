@@ -1,0 +1,45 @@
+Your Practice Problem (SRP + LSP)
+Multi-Channel Notification System
+Requirements:
+The application can notify users through:
+	1. Email 
+	2. SMS 
+	3. Push Notification 
+For every notification:
+
+sendNotification(String recipient, String message)
+should be supported.
+
+Sample Usage
+
+NotificationService service =
+        new EmailNotificationService();
+
+service.sendNotification(
+        "abc@gmail.com",
+        "Welcome!"
+);
+or
+
+NotificationService service =
+        new SmsNotificationService();
+
+service.sendNotification(
+        "9876543210",
+        "OTP: 1234"
+);
+The client code should work regardless of which notification implementation is used.
+
+Deliverables
+Provide:
+1. Class Diagram
+Example:
+
+NotificationService
+    |
+    +--- ?
+    |
+    +--- ?
+2. Method Signatures
+No need for full implementation.
+Just structure and methods.

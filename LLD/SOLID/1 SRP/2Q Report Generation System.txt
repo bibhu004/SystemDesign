@@ -1,0 +1,40 @@
+Question 2: Report Generation System
+Requirements
+A manager wants to receive a sales report every day.
+The system should:
+	1. Generate a sales report 
+	2. Save the report to a file 
+	3. Email the report to the manager 
+
+Example Flow
+
+Generate report
+Save report to file
+Send report via email
+
+Sample Output
+
+Generating sales report...
+
+Report:
+Total Sales : 50000
+Orders : 120
+
+Saving report to sales_report.txt
+
+Sending report to manager@company.com
+
+Constraints
+Keep it simple.
+You may assume:
+
+Total Sales = 50000
+Orders = 120
+No actual file creation required.
+Just print:
+
+Saving report to sales_report.txt
+No actual email required.
+Just print:
+
+Sending report to manager@company.com
