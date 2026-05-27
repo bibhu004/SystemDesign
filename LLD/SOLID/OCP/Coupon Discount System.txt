@@ -1,0 +1,152 @@
+Question 3: Coupon Discount System
+
+An e-commerce platform allows applying coupons to an order.
+
+Current Coupons
+Flat Coupon
+Order Amount = 1000
+Discount = 100
+
+Final Amount = 900
+Percentage Coupon
+Order Amount = 1000
+Discount = 10%
+
+Final Amount = 900
+Cashback Coupon
+Order Amount = 1000
+Discount = 0
+
+Cashback = 50
+Future Requirements
+
+Business may introduce:
+
+Buy One Get One
+Festival Coupon
+Premium User Coupon
+Bank Offer Coupon
+Partner Coupon
+
+and many more.
+
+Requirements
+
+The system should:
+
+Accept an order amount
+Apply the selected coupon
+Return the final result
+Deliverables
+
+Only provide:
+
+1. Class Diagram
+
+Example:
+
+ClassA
+ |
+ +--- ClassB
+2. Method Signatures
+
+Example:
+
+public double applyDiscount(double amount);
+
+No implementation required.
+
+Important
+
+Do not think about design patterns first.
+
+Think about:
+
+What responsibility changes when a new coupon is added?
+Which class should remain untouched when new coupon types are introduced?
+How would you prevent a giant:
+switch(couponType)
+
+from spreading across the codebase?
+
+Evaluation
+
+I will review:
+
+Category	Score
+SRP	/10
+LSP	/10
+OCP	/10
+Naming	/10
+Interview Readiness	/10
+
+and point out:
+
+hidden OCP violations
+over-engineering
+under-engineering
+what a strong SDE2 interviewer would expect
+
+Try to keep it within 10–15 lines of class structure and signatures. The goal is design, not implementation.
+
+
+
+-----------------------------------------xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-------------------------------
+
+
+public interface Coupons{
+        public double applyDiscount(double amount);
+}
+
+
+public class FlatCoupons extends Coupons{
+
+    @Override
+    public double applyDiscount(double amount){
+        
+        return amount - 100;
+    }
+}
+
+
+public class PercentageCoupons extends Coupons{
+
+    @Override
+    public double applyDiscount(double amount){
+        
+        return amount - (amount%10);
+    }
+}
+
+//similarly we will have other coupons added
+
+
+public class CouponSelector{
+    Coupons coupons;
+    public CouponSelector( Coupons coupons){
+        this.coupons = coupons;
+    }
+
+    public double getFinalAmount(double amount){
+        return coupon.applyDiscount(amount);
+    }
+}
+
+public enum CouponTypes{
+    FLAT, PERCENTAGE;
+}
+
+
+public class CouponFactory{
+    Map<CouponTypes,Coupons> couponMapping;
+
+    class CouponFactory(){
+        couponMapping = new HashMap<>();
+        //for each couponType...use switch case and populate the map and object
+    }
+
+    public double getFinalAmount(CouponTypes couponTypes, double amount){
+        return couponMapping.get(couponTypes).applyDiscount(amount);
+    }
+
+}

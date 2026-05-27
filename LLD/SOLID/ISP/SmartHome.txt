@@ -1,0 +1,72 @@
+
+public interface smartAppliance{
+
+        public boolean turnOn();
+        public boolean turnOff();
+
+}
+
+
+public interface Bulb extends smartAppliance{
+
+    public int adjustBrightness(Level level);
+}
+
+public interface Fan extends smartAppliance{
+
+    public int adjustSpeed(Level level);
+}
+
+
+public interface Camera extends smartAppliance{
+
+    public boolean isRecordingVideo();
+}
+
+public enum Level{
+    UP, DOWN;
+}
+
+
+public class SmartBulb extends Bulb{
+    boolean switch;
+    int currBrightness=0;
+    int maxBrightness=5;
+    int minBrightness=1;
+
+
+    @Override
+    public boolean turnOn(){
+        
+        return switch=true;
+    }
+
+    @Override
+    public boolean turnOff(){
+        
+        return switch=false;
+    }
+
+    @Override
+    public int adjuctBrightness(Level level){
+        if(level == Level.UP){
+            currBrightness = Math.min(currBrightness+1, maxBrightness);
+        }
+        else{
+            currBrightness = Math.Max(currBrightness-1, minBrightness);
+        }
+        return currBrightness;
+    }
+}
+
+//similarly we can implement the fan and camera clases.
+
+
+public class HomeService{
+    smartAppliance smartappliance;
+
+    public void turnOnBulb(){
+        smartAppliance = new Bulb();
+        smartAppliance.isOn();
+    }
+}
