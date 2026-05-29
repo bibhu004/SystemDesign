@@ -1,0 +1,79 @@
+
+
+public interface DocPrintable{
+
+    boolean printDoc(Doc doc);
+}
+
+public interface DocScnable{
+    boolean scanDoc(Doc doc);
+}
+
+public interface DocFaxable{
+
+    boolean FaxDoc(Doc doc);
+}
+
+
+public class Doc{
+
+    String data;
+}
+
+public class BasicPrinter extends DocPrintable{
+
+    @Override
+    public Doc printDoc(Doc doc){
+        return newDoc;
+    }
+}
+
+public class AdvancePrinter extends DocPrintable, DocScnable {
+
+    @Override
+    public boolean printDoc(Doc doc){
+        if(printSuccess)
+            return true;
+        return false;
+    }
+
+    @Override
+    public boolean scanDoc(Doc doc){
+        if(scanSuccess)
+            return true;
+        return false;
+    }
+}
+
+//similarly other classes can be defined
+
+//services.
+
+@Service
+public printableService{
+    DocPrintable device;
+
+    public printableService(DocPrintable device){
+        this.device = device;
+    }
+
+
+    public Doc printDoc(Doc doc){
+        return device.printDoc(doc);
+    }
+}
+
+
+//controller
+
+@Restcontroller(/basiprinter)
+public class BasicPrinter{
+
+    @Autowired
+    PrintableService printableService;
+
+    @postMapping(/print)
+    public Doc printDocument(@RequestBody Doc doc){
+        
+    }
+}

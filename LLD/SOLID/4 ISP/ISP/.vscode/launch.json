@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-IspApplication<ISP>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.ISP.ISP.IspApplication",
+            "projectName": "ISP",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
