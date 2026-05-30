@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-PaymentMethodsApplication<paymentMethods>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.payment.paymentMethods.PaymentMethodsApplication",
+            "projectName": "paymentMethods",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
