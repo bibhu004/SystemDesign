@@ -10,7 +10,7 @@ import com.notification.flight.booking.enums.Channels;
 import com.notification.flight.booking.enums.FlightName;
 import com.notification.flight.booking.modle.User;
 
-@Service
+@service
 public class UserService {
 
     private FlightService flightService;
