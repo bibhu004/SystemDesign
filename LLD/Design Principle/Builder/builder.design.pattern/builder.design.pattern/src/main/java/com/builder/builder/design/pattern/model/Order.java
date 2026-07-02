@@ -45,8 +45,6 @@ public class Order {
         }
 
         public OrderBuilder customerId(String customerId){
-            if(customerId.length() <=0)
-                throw new RuntimeErrorException("customer id is null");
             this.customerId = customerId;
             return this;
         }
