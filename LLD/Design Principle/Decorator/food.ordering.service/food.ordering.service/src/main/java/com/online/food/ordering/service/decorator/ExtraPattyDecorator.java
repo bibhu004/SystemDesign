@@ -18,7 +18,7 @@ public class ExtraPattyDecorator extends BurgerDecorator{
     
     @Override
     public double getCost(){
-        return burger.getCost() + 32;
+        return burger.getCost() + 352;
     }
 
 }
