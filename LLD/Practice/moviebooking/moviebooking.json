@@ -1,0 +1,113 @@
+{
+  "version": "30.2.7",
+  "pages": [
+    {
+      "id": "88osUjp0D5jjSSO1F8MH",
+      "name": "Page-1",
+      "cells": [
+        {
+          "id": "1",
+          "type": "layer"
+        },
+        {
+          "id": "LbVtV1_thmRVhzS3H9jG-1",
+          "type": "node",
+          "parent": "1",
+          "label": "Theater\nid\nname\naddress\nList<Screen> screens",
+          "html": "Theater<div>id</div><div>name</div><div>address</div><div>List&lt;Screen&gt; screens</div>"
+        },
+        {
+          "id": "LbVtV1_thmRVhzS3H9jG-6",
+          "type": "edge",
+          "parent": "1",
+          "source": "LbVtV1_thmRVhzS3H9jG-2",
+          "target": "LbVtV1_thmRVhzS3H9jG-1"
+        },
+        {
+          "id": "LbVtV1_thmRVhzS3H9jG-2",
+          "type": "node",
+          "parent": "1",
+          "label": "Screen\nid\nname\nrowCapacity\ncolCapacity\nisWorking",
+          "html": "Screen<div>id</div><div>name</div><div>rowCapacity</div><div>colCapacity</div><div>isWorking</div>"
+        },
+        {
+          "id": "LbVtV1_thmRVhzS3H9jG-3",
+          "type": "node",
+          "parent": "1",
+          "label": "Movie\nid\nname\nduration\nlanguage",
+          "html": "Movie<div>id</div><div>name</div><div>duration</div><div>language</div><div><br></div>"
+        },
+        {
+          "id": "LbVtV1_thmRVhzS3H9jG-4",
+          "type": "node",
+          "parent": "1",
+          "label": "Ticket\nid\nMovie\nScreen\nShow\nSeatNumber\nTotal Fare",
+          "html": "Ticket<div>id</div><div>Movie</div><div>Screen</div><div>Show</div><div>SeatNumber</div><div>Total Fare</div>"
+        },
+        {
+          "id": "LbVtV1_thmRVhzS3H9jG-8",
+          "type": "edge",
+          "parent": "1",
+          "source": "LbVtV1_thmRVhzS3H9jG-5",
+          "target": "LbVtV1_thmRVhzS3H9jG-3"
+        },
+        {
+          "id": "LbVtV1_thmRVhzS3H9jG-5",
+          "type": "node",
+          "parent": "1",
+          "label": "Show\nid\nmovie\nScreen\nStart Time\nEnd time\nMap<Seatrow, col> seats",
+          "html": "Show<div>id</div><div>movie</div><div>Screen</div><div>Start Time</div><div>End time</div><div>Map&lt;Seatrow, col&gt; seats</div><div><br></div>"
+        },
+        {
+          "id": "LbVtV1_thmRVhzS3H9jG-7",
+          "type": "edge",
+          "parent": "1",
+          "source": "LbVtV1_thmRVhzS3H9jG-5",
+          "target": "LbVtV1_thmRVhzS3H9jG-2"
+        },
+        {
+          "id": "LbVtV1_thmRVhzS3H9jG-9",
+          "type": "edge",
+          "parent": "1",
+          "source": "LbVtV1_thmRVhzS3H9jG-5",
+          "target": "LbVtV1_thmRVhzS3H9jG-4"
+        },
+        {
+          "id": "LbVtV1_thmRVhzS3H9jG-11",
+          "type": "edge",
+          "parent": "1",
+          "source": "LbVtV1_thmRVhzS3H9jG-10",
+          "target": "LbVtV1_thmRVhzS3H9jG-5"
+        },
+        {
+          "id": "LbVtV1_thmRVhzS3H9jG-10",
+          "type": "node",
+          "parent": "1",
+          "label": "BrowserScreen\n\ngetBrowserData();\ngetSowByMovie();\ngetSeatByShow();\nbookTicket();\ncancleTicket();",
+          "html": "BrowserScreen<div><br></div><div>getBrowserData();</div><div>getSowByMovie();</div><div>getSeatByShow();</div><div>bookTicket();</div><div>cancleTicket();</div>"
+        },
+        {
+          "id": "LbVtV1_thmRVhzS3H9jG-13",
+          "type": "edge",
+          "parent": "1",
+          "source": "LbVtV1_thmRVhzS3H9jG-12",
+          "target": "LbVtV1_thmRVhzS3H9jG-5"
+        },
+        {
+          "id": "LbVtV1_thmRVhzS3H9jG-14",
+          "type": "edge",
+          "parent": "1",
+          "source": "LbVtV1_thmRVhzS3H9jG-12",
+          "target": "LbVtV1_thmRVhzS3H9jG-4"
+        },
+        {
+          "id": "LbVtV1_thmRVhzS3H9jG-12",
+          "type": "node",
+          "parent": "1",
+          "label": "BookingManager\ncheckAvailableSeat();\nbookSeat();\ngenerateTicket()",
+          "html": "BookingManager<div>checkAvailableSeat();</div><div>bookSeat();</div><div>generateTicket()</div>"
+        }
+      ]
+    }
+  ]
+}

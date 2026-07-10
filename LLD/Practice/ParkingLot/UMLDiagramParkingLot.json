@@ -1,0 +1,267 @@
+{
+  "version": "30.2.7",
+  "pages": [
+    {
+      "id": "u0GB7RUT1K2EWQo4yaa-",
+      "name": "Page-1",
+      "cells": [
+        {
+          "id": "1",
+          "type": "layer"
+        },
+        {
+          "id": "0ZQ3rUuF4hE7DZ4fBUqy-27",
+          "type": "edge",
+          "parent": "1",
+          "source": "0ZQ3rUuF4hE7DZ4fBUqy-1",
+          "target": "0ZQ3rUuF4hE7DZ4fBUqy-22"
+        },
+        {
+          "id": "0ZQ3rUuF4hE7DZ4fBUqy-1",
+          "type": "node",
+          "parent": "1",
+          "label": "Interface Vehicle\n\ngetVehicleNo();\ngetVehicleType();",
+          "html": "Interface Vehicle<div><br></div><div>getVehicleNo();</div><div>getVehicleType();</div>"
+        },
+        {
+          "id": "0ZQ3rUuF4hE7DZ4fBUqy-7",
+          "type": "edge",
+          "parent": "1",
+          "source": "0ZQ3rUuF4hE7DZ4fBUqy-2",
+          "target": "0ZQ3rUuF4hE7DZ4fBUqy-1"
+        },
+        {
+          "id": "0ZQ3rUuF4hE7DZ4fBUqy-2",
+          "type": "node",
+          "parent": "1",
+          "label": "Car extends Vehicle",
+          "html": "Car extends Vehicle<div><br></div>"
+        },
+        {
+          "id": "0ZQ3rUuF4hE7DZ4fBUqy-28",
+          "type": "edge",
+          "parent": "1",
+          "source": "0ZQ3rUuF4hE7DZ4fBUqy-3",
+          "target": "0ZQ3rUuF4hE7DZ4fBUqy-22"
+        },
+        {
+          "id": "0ZQ3rUuF4hE7DZ4fBUqy-3",
+          "type": "node",
+          "parent": "1",
+          "label": "Spot\nisAvaliable();\ngetSpotType();\npark();",
+          "html": "Spot<div>isAvaliable();</div><div>getSpotType();</div><div>park();</div>"
+        },
+        {
+          "id": "0ZQ3rUuF4hE7DZ4fBUqy-8",
+          "type": "edge",
+          "parent": "1",
+          "source": "0ZQ3rUuF4hE7DZ4fBUqy-4",
+          "target": "0ZQ3rUuF4hE7DZ4fBUqy-1"
+        },
+        {
+          "id": "0ZQ3rUuF4hE7DZ4fBUqy-4",
+          "type": "node",
+          "parent": "1",
+          "label": "bike extends Vehicle"
+        },
+        {
+          "id": "0ZQ3rUuF4hE7DZ4fBUqy-9",
+          "type": "edge",
+          "parent": "1",
+          "source": "0ZQ3rUuF4hE7DZ4fBUqy-5",
+          "target": "0ZQ3rUuF4hE7DZ4fBUqy-1"
+        },
+        {
+          "id": "0ZQ3rUuF4hE7DZ4fBUqy-5",
+          "type": "node",
+          "parent": "1",
+          "label": "Truck extends Vehicle"
+        },
+        {
+          "id": "0ZQ3rUuF4hE7DZ4fBUqy-14",
+          "type": "edge",
+          "parent": "1",
+          "source": "0ZQ3rUuF4hE7DZ4fBUqy-10",
+          "target": "0ZQ3rUuF4hE7DZ4fBUqy-3"
+        },
+        {
+          "id": "0ZQ3rUuF4hE7DZ4fBUqy-18",
+          "type": "edge",
+          "parent": "1",
+          "source": "0ZQ3rUuF4hE7DZ4fBUqy-10",
+          "target": "0ZQ3rUuF4hE7DZ4fBUqy-16"
+        },
+        {
+          "id": "0ZQ3rUuF4hE7DZ4fBUqy-10",
+          "type": "node",
+          "parent": "1",
+          "label": "carSpot extend Spot"
+        },
+        {
+          "id": "0ZQ3rUuF4hE7DZ4fBUqy-19",
+          "type": "edge",
+          "parent": "1",
+          "source": "0ZQ3rUuF4hE7DZ4fBUqy-11",
+          "target": "0ZQ3rUuF4hE7DZ4fBUqy-16"
+        },
+        {
+          "id": "0ZQ3rUuF4hE7DZ4fBUqy-11",
+          "type": "node",
+          "parent": "1",
+          "label": "TruckSpot extend Spot"
+        },
+        {
+          "id": "0ZQ3rUuF4hE7DZ4fBUqy-13",
+          "type": "edge",
+          "parent": "1",
+          "source": "0ZQ3rUuF4hE7DZ4fBUqy-12",
+          "target": "0ZQ3rUuF4hE7DZ4fBUqy-3"
+        },
+        {
+          "id": "0ZQ3rUuF4hE7DZ4fBUqy-17",
+          "type": "edge",
+          "parent": "1",
+          "source": "0ZQ3rUuF4hE7DZ4fBUqy-12",
+          "target": "0ZQ3rUuF4hE7DZ4fBUqy-16"
+        },
+        {
+          "id": "0ZQ3rUuF4hE7DZ4fBUqy-12",
+          "type": "node",
+          "parent": "1",
+          "label": "BikeSpot extend Spot"
+        },
+        {
+          "id": "0ZQ3rUuF4hE7DZ4fBUqy-15",
+          "type": "edge",
+          "parent": "1",
+          "source": "0ZQ3rUuF4hE7DZ4fBUqy-11",
+          "target": "0ZQ3rUuF4hE7DZ4fBUqy-3"
+        },
+        {
+          "id": "0ZQ3rUuF4hE7DZ4fBUqy-21",
+          "type": "edge",
+          "parent": "1",
+          "source": "0ZQ3rUuF4hE7DZ4fBUqy-16",
+          "target": "0ZQ3rUuF4hE7DZ4fBUqy-20"
+        },
+        {
+          "id": "0ZQ3rUuF4hE7DZ4fBUqy-16",
+          "type": "node",
+          "parent": "1",
+          "label": "ParkingFloor\nMap<SPOTTYPE, spot>",
+          "html": "ParkingFloor<div>Map&lt;SPOTTYPE, spot&gt;</div>"
+        },
+        {
+          "id": "0ZQ3rUuF4hE7DZ4fBUqy-20",
+          "type": "node",
+          "parent": "1",
+          "label": "ParkingLot\nList<ParkingFloor>",
+          "html": "ParkingLot<div>List&lt;ParkingFloor&gt;</div>"
+        },
+        {
+          "id": "0ZQ3rUuF4hE7DZ4fBUqy-22",
+          "type": "node",
+          "parent": "1",
+          "label": "ParkingManager\nenterVehicle();\nallocateSpot();\nGenerateTicket();\nVehicleExit();",
+          "html": "ParkingManager<div>enterVehicle();</div><div>allocateSpot();</div><div>GenerateTicket();</div><div>VehicleExit();</div>"
+        },
+        {
+          "id": "0ZQ3rUuF4hE7DZ4fBUqy-23",
+          "type": "node",
+          "parent": "1",
+          "label": "Ticket\nid\nVehicle\nentry time\nexit time\nprice",
+          "html": "Ticket<div>id</div><div>Vehicle</div><div>entry time</div><div>exit time</div><div>price</div>"
+        },
+        {
+          "id": "0ZQ3rUuF4hE7DZ4fBUqy-25",
+          "type": "edge",
+          "parent": "1",
+          "source": "0ZQ3rUuF4hE7DZ4fBUqy-24",
+          "target": "0ZQ3rUuF4hE7DZ4fBUqy-23"
+        },
+        {
+          "id": "0ZQ3rUuF4hE7DZ4fBUqy-26",
+          "type": "edge",
+          "parent": "1",
+          "source": "0ZQ3rUuF4hE7DZ4fBUqy-24",
+          "target": "0ZQ3rUuF4hE7DZ4fBUqy-22"
+        },
+        {
+          "id": "0ZQ3rUuF4hE7DZ4fBUqy-40",
+          "type": "edge",
+          "parent": "1",
+          "source": "0ZQ3rUuF4hE7DZ4fBUqy-24",
+          "target": "0ZQ3rUuF4hE7DZ4fBUqy-37"
+        },
+        {
+          "id": "0ZQ3rUuF4hE7DZ4fBUqy-24",
+          "type": "node",
+          "parent": "1",
+          "label": "TicketService\n\nGenerateTicket",
+          "html": "TicketService<div><br></div><div>GenerateTicket</div>"
+        },
+        {
+          "id": "0ZQ3rUuF4hE7DZ4fBUqy-38",
+          "type": "edge",
+          "parent": "1",
+          "source": "0ZQ3rUuF4hE7DZ4fBUqy-29",
+          "target": "0ZQ3rUuF4hE7DZ4fBUqy-37"
+        },
+        {
+          "id": "0ZQ3rUuF4hE7DZ4fBUqy-29",
+          "type": "node",
+          "parent": "1",
+          "label": "PricingRegistry\nmap<StrategyType, Registry",
+          "html": "PricingRegistry<div>map&lt;StrategyType, Registry</div>"
+        },
+        {
+          "id": "0ZQ3rUuF4hE7DZ4fBUqy-35",
+          "type": "edge",
+          "parent": "1",
+          "source": "0ZQ3rUuF4hE7DZ4fBUqy-30",
+          "target": "0ZQ3rUuF4hE7DZ4fBUqy-29"
+        },
+        {
+          "id": "0ZQ3rUuF4hE7DZ4fBUqy-30",
+          "type": "node",
+          "parent": "1",
+          "label": "Interface PricingStrategy\nGetStrategyType();\nCalcullateFee();",
+          "html": "Interface PricingStrategy<div>GetStrategyType();</div><div>CalcullateFee();</div>"
+        },
+        {
+          "id": "0ZQ3rUuF4hE7DZ4fBUqy-33",
+          "type": "edge",
+          "parent": "1",
+          "source": "0ZQ3rUuF4hE7DZ4fBUqy-31",
+          "target": "0ZQ3rUuF4hE7DZ4fBUqy-30"
+        },
+        {
+          "id": "0ZQ3rUuF4hE7DZ4fBUqy-31",
+          "type": "node",
+          "parent": "1",
+          "label": "StandardPricing extend pricing registry"
+        },
+        {
+          "id": "0ZQ3rUuF4hE7DZ4fBUqy-34",
+          "type": "edge",
+          "parent": "1",
+          "source": "0ZQ3rUuF4hE7DZ4fBUqy-32",
+          "target": "0ZQ3rUuF4hE7DZ4fBUqy-30"
+        },
+        {
+          "id": "0ZQ3rUuF4hE7DZ4fBUqy-32",
+          "type": "node",
+          "parent": "1",
+          "label": "WeepekdPricing extends Pricingregistry"
+        },
+        {
+          "id": "0ZQ3rUuF4hE7DZ4fBUqy-37",
+          "type": "node",
+          "parent": "1",
+          "label": "Figureout\nwhich service to take",
+          "html": "Figureout<div>which service to take</div>"
+        }
+      ]
+    }
+  ]
+}
