@@ -1,0 +1,152 @@
+{
+  "version": "30.3.2",
+  "pages": [
+    {
+      "id": "AZZKBRqw85aw0BrqyXu9",
+      "name": "Page-1",
+      "cells": [
+        {
+          "id": "1",
+          "type": "layer"
+        },
+        {
+          "id": "bQqHnnYSH2vuFdvgcQIq-8",
+          "type": "edge",
+          "parent": "1",
+          "source": "bQqHnnYSH2vuFdvgcQIq-1",
+          "target": "bQqHnnYSH2vuFdvgcQIq-5"
+        },
+        {
+          "id": "bQqHnnYSH2vuFdvgcQIq-11",
+          "type": "edge",
+          "parent": "1",
+          "source": "bQqHnnYSH2vuFdvgcQIq-1",
+          "target": "bQqHnnYSH2vuFdvgcQIq-10"
+        },
+        {
+          "id": "bQqHnnYSH2vuFdvgcQIq-1",
+          "type": "node",
+          "parent": "1",
+          "label": "User\n-id\n-name\n-limit",
+          "html": "User<div>-id</div><div>-name</div><div>-limit</div>"
+        },
+        {
+          "id": "bQqHnnYSH2vuFdvgcQIq-6",
+          "type": "edge",
+          "parent": "1",
+          "source": "bQqHnnYSH2vuFdvgcQIq-2",
+          "target": "bQqHnnYSH2vuFdvgcQIq-3"
+        },
+        {
+          "id": "bQqHnnYSH2vuFdvgcQIq-18",
+          "type": "edge",
+          "parent": "1",
+          "source": "bQqHnnYSH2vuFdvgcQIq-2",
+          "target": "bQqHnnYSH2vuFdvgcQIq-5"
+        },
+        {
+          "id": "bQqHnnYSH2vuFdvgcQIq-2",
+          "type": "node",
+          "parent": "1",
+          "label": "Book\n-id\n-name\n-isAvailable\n-price",
+          "html": "Book<div>-id</div><div>-name</div><div>-isAvailable</div><div>-price</div>"
+        },
+        {
+          "id": "bQqHnnYSH2vuFdvgcQIq-3",
+          "type": "node",
+          "parent": "1",
+          "label": "Books\n-id\n-bookId\n-libId",
+          "html": "Books<div>-id</div><div>-bookId</div><div>-libId</div>"
+        },
+        {
+          "id": "bQqHnnYSH2vuFdvgcQIq-7",
+          "type": "edge",
+          "parent": "1",
+          "source": "bQqHnnYSH2vuFdvgcQIq-4",
+          "target": "bQqHnnYSH2vuFdvgcQIq-3"
+        },
+        {
+          "id": "bQqHnnYSH2vuFdvgcQIq-4",
+          "type": "node",
+          "parent": "1",
+          "label": "Lib\n-id\n-BookName\n-AvailableQantity\n-TotalQuantity",
+          "html": "Lib<div>-id</div><div>-BookName</div><div>-AvailableQantity</div><div>-TotalQuantity</div>"
+        },
+        {
+          "id": "bQqHnnYSH2vuFdvgcQIq-5",
+          "type": "node",
+          "parent": "1",
+          "label": "BorrowTable\n-id\n-bookId\n-BorrowedDateTIme\n-ReturnDateTime\n-userId\n-isReturned",
+          "html": "BorrowTable<div>-id</div><div>-bookId</div><div>-BorrowedDateTIme</div><div>-ReturnDateTime</div><div>-userId</div><div>-isReturned</div>"
+        },
+        {
+          "id": "bQqHnnYSH2vuFdvgcQIq-10",
+          "type": "node",
+          "parent": "1",
+          "label": "BookingReciept\n-id\n-BookingId\n-UserName\n-ListOfBooks\n-Amount",
+          "html": "BookingReciept<div>-id</div><div>-BookingId</div><div>-UserName</div><div>-ListOfBooks</div><div>-Amount</div>"
+        },
+        {
+          "id": "bQqHnnYSH2vuFdvgcQIq-12",
+          "type": "node",
+          "parent": "1",
+          "label": "1"
+        },
+        {
+          "id": "bQqHnnYSH2vuFdvgcQIq-13",
+          "type": "node",
+          "parent": "1",
+          "label": "*"
+        },
+        {
+          "id": "bQqHnnYSH2vuFdvgcQIq-14",
+          "type": "node",
+          "parent": "1",
+          "label": "1"
+        },
+        {
+          "id": "bQqHnnYSH2vuFdvgcQIq-15",
+          "type": "node",
+          "parent": "1",
+          "label": "*"
+        },
+        {
+          "id": "bQqHnnYSH2vuFdvgcQIq-16",
+          "type": "node",
+          "parent": "1",
+          "label": "1"
+        },
+        {
+          "id": "bQqHnnYSH2vuFdvgcQIq-17",
+          "type": "node",
+          "parent": "1",
+          "label": "1"
+        },
+        {
+          "id": "bQqHnnYSH2vuFdvgcQIq-19",
+          "type": "node",
+          "parent": "1",
+          "label": "1"
+        },
+        {
+          "id": "bQqHnnYSH2vuFdvgcQIq-20",
+          "type": "node",
+          "parent": "1",
+          "label": "*"
+        },
+        {
+          "id": "bQqHnnYSH2vuFdvgcQIq-21",
+          "type": "node",
+          "parent": "1",
+          "label": "1"
+        },
+        {
+          "id": "bQqHnnYSH2vuFdvgcQIq-22",
+          "type": "node",
+          "parent": "1",
+          "label": "*"
+        }
+      ]
+    }
+  ]
+}
