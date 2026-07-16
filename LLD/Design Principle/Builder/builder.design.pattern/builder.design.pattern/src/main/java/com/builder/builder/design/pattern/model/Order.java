@@ -139,7 +139,7 @@ public class Order {
         }
 
         /**
-         * Builds the Order objectsss
+         * Builds the Order objects
          */
         public Order build() {
 
